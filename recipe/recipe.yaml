@@ -44,7 +44,9 @@ tests:
       imports:
         - gauche
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: Gaussian Process Library for Molecules, Chemical Reactions and Proteins.
